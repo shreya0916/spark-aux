@@ -9,7 +9,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>SPARK AUX</title>
+    <title>TRACK 01</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,31 +18,97 @@
 
     <main>
 
-        <p>SPARK MAGAZINE</p>
+        <p class="spark-label">SPARK MAGAZINE</p>
 
         <h1>
-            What does your Alter Ego sound like?
+            What Does Your Alter Ego Sound Like?
         </h1>
 
-        <div class="cd">
+        <!-- CD -->
+
+        <div class="cd" id="cd">
+
+            <div
+                class="album-art"
+                id="album-art"
+            ></div>
+
             <div class="cd-hole"></div>
+
         </div>
 
-        <h2>TRACK 01</h2>
 
-        <p>
-            Give us one song that sounds like this issue.
-        </p>
+        <!-- NOW PLAYING -->
 
-        <input
-            type="text"
-            id="song"
-            placeholder="Search for a song..."
+        <section class="now-playing">
+
+            <p class="small-label">
+                NOW PLAYING
+            </p>
+
+            <h2 id="track-title">
+                Nothing yet
+            </h2>
+
+            <p id="artist-name">
+                Search for a track below.
+            </p>
+
+        </section>
+
+
+        <!-- SEARCH -->
+
+        <form id="song-form">
+
+            <input
+                type="text"
+                id="song-search"
+                placeholder="Song or artist..."
+                autocomplete="off"
+            >
+
+            <button type="submit">
+                SEARCH
+            </button>
+
+        </form>
+
+
+        <!-- SEARCH RESULTS -->
+
+        <div id="results"></div>
+
+
+        <!-- CONTROLS -->
+
+        <div
+            id="player-controls"
+            class="player-controls"
+            hidden
         >
 
-        <button id="load">
-            LOAD CD
-        </button>
+            <button
+                id="play-button"
+                type="button"
+            >
+                ▶ PLAY PREVIEW
+            </button>
+
+            <a
+                id="spotify-link"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                OPEN IN SPOTIFY ↗
+            </a>
+
+        </div>
+
+
+        <!-- actual audio -->
+
+        <audio id="audio"></audio>
 
     </main>
 
