@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #111;
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main {
+    width: min(90%, 700px);
+    padding: 80px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+
+.cd {
+    width: 300px;
+    height: 300px;
+
+    margin: 40px auto;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #111 0 7%,
+            transparent 7% 15%,
+            #ddd 15% 35%,
+            #999 36% 60%,
+            #eee 61% 100%
+        );
+}
+
+.cd.playing {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+
+    margin-top: 20px;
+
+    font-size: 16px;
+
+    border: 1px solid #555;
+
+    background: #222;
+    color: white;
+}
+
+button {
+    width: 100%;
+
+    margin-top: 10px;
+    padding: 16px;
+
+    background: white;
+    color: black;
+
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
