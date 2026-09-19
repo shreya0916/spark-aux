@@ -121,3 +121,79 @@ button {
 
     cursor: pointer;
 }
+
+#results {
+    margin-top: 12px;
+}
+
+.song-result {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #181818;
+    color: white;
+
+    border: 1px solid #444;
+
+    padding: 12px;
+
+    text-align: left;
+    cursor: pointer;
+}
+
+.song-result:hover {
+    background: #292929;
+}
+
+.song-result img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.song-result span {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.song-result small {
+    color: #aaa;
+}
+
+.player-controls {
+    margin-top: 20px;
+}
+
+.player-controls a {
+    display: block;
+
+    margin-top: 10px;
+    padding: 16px;
+
+    background: #1DB954;
+    color: black;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.album-art {
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 50%;
+
+    background-position: center;
+    background-size: cover;
+
+    z-index: -1;
+}
+
+.cd {
+    position: relative;
+}
